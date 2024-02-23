@@ -1,0 +1,77 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.game-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-container {
+  display: flex;
+  gap: 10px;
+}
+
+.card {
+  width: 60px;
+  height: 80px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#turn-indicator {
+  font-weight: bold;
+}
+
+#player-cards .card {
+  background-color: #ccc;
+}
+
+#community-cards .card {
+  background-color: #fff;
+}
+
+#bet-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#fold-button {
+  background-color: #f44336;
+  color: white;
+}

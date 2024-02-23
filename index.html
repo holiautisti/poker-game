@@ -3,23 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Poker Game</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Texas Hold'em Poker</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="gameContainer">
-      <div id="board">
-        <!-- Community cards will be displayed here -->
+    <div class="container">
+      <div class="game-info">
+        <p id="pot-value">Pot: $0</p>
+        <p id="player-chips">Player Chips: $100</p>
+        <p id="turn-indicator"></p>
       </div>
-      <div id="players">
-        <!-- Player hands and info will be displayed here -->
+      <div class="cards">
+        <div id="player-cards" class="card-container"></div>
+        <div id="community-cards" class="card-container"></div>
       </div>
-      <div id="controls">
-        <button id="foldButton">Fold</button>
-        <button id="callButton">Call</button>
-        <button id="raiseButton">Raise</button>
+      <div class="buttons">
+        <button id="check-button">Check</button>
+        <button id="fold-button">Fold</button>
+        <button id="bet-button">Bet</button>
       </div>
     </div>
-    <script src="game.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
