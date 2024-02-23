@@ -14,8 +14,6 @@ function initializeDeck() {
     }
 }
 
-// ... previous code from start of script.js ...
-
 function shuffleDeck() {
   // Fisher-Yates shuffle implemented to address security concerns
   for (let i = deck.length - 1; i > 0; i--) {
@@ -61,47 +59,23 @@ function updateDisplay() {
 
 function handleCheckClick() {
   if (turn === "player") {
-    // Check if player can check (enough chips, no prior raises)
-    if (canPlayerCheck()) {
-      // Proceed to next turn (opponent's turn)
-      turn = "opponent";
-      updateDisplay();
-      // Simulate opponent's action (check, raise, fold) based on your game logic
-    } else {
-      // Handle invalid check attempt (display message, prompt alternative action)
-    }
+    // Implement check logic (no action, proceed to next turn)
+    turn = "opponent"; // Simulate opponent's turn
+    updateDisplay();
   }
 }
 
 function handleFoldClick() {
   if (turn === "player") {
-    // End game, display message
-    // Update game state (winner, pot distribution, etc.)
-    // Update UI accordingly
+    // Implement fold logic (end game, display message)
+    // (Note: This part requires integration with game logic and UI updates)
   }
 }
 
 function handleBetClick() {
   if (turn === "player") {
-    // Prompt player for bet amount (within valid range)
-    const betAmount = prompt("Enter bet amount:");
-    // Validate bet amount (within player chips limit, no exceeding raises)
-    if (isValidBet(betAmount)) {
-      // Update pot value, player chips
-      potValue += betAmount;
-      playerChips -= betAmount;
-      updateDisplay();
-      // Check if bet ends round (no further raises)
-      if (isRoundOver()) {
-        // Proceed to next round (showdown or betting continues)
-      } else {
-        // Move to next player's turn
-        turn = "opponent";
-        // Simulate opponent's action (call, raise, fold) based on your game logic
-      }
-    } else {
-      // Handle invalid bet attempt (display message, prompt alternative action)
-    }
+    // Implement bet logic (prompt for bet amount, update pot and player chips)
+    // (Note: This part requires integration with user input and game logic)
   }
 }
 
